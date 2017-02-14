@@ -134,7 +134,8 @@ toolchain_table = [
     Toolchain('android-ndk-r13b-api-21-x86', 'Unix Makefiles'),
     Toolchain('android-ndk-r13b-api-21-x86-64', 'Unix Makefiles'),
     Toolchain('emscripten-cxx11', 'Unix Makefiles'),
-    Toolchain('raspberrypi2-cxx11', 'Unix Makefiles')
+    Toolchain('raspberrypi2-cxx11', 'Unix Makefiles'),
+    Toolchain('raspberrypi3b-cxx11', 'Unix Makefiles')
 ]
 
 if os.name == 'nt':
