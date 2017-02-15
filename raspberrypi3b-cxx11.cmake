@@ -92,7 +92,6 @@ set(CROSS_COMPILE_SYSROOT
     CACHE PATH "RaspberryPi sysroot"
 )
 
-
 # only search for libraries and includes in the ndk toolchain
 set(CMAKE_FIND_ROOT_PATH "${CROSS_COMPILE_SYSROOT}")
 set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM ONLY)

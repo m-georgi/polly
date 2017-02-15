@@ -90,6 +90,13 @@ set(CROSS_COMPILE_SYSROOT
     CACHE PATH "RaspberryPi sysroot"
 )
 
+
+# only search for libraries and includes in the ndk toolchain
+set(CMAKE_FIND_ROOT_PATH "${CROSS_COMPILE_SYSROOT}")
+set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+
 include("${CMAKE_CURRENT_LIST_DIR}/flags/cxx11.cmake")
 include("${CMAKE_CURRENT_LIST_DIR}/compiler/gcc-cross-compile.cmake")
 
