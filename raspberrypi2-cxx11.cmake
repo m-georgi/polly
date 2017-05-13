@@ -99,6 +99,7 @@ set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 
 include("${CMAKE_CURRENT_LIST_DIR}/flags/cxx11.cmake")
 include("${CMAKE_CURRENT_LIST_DIR}/compiler/gcc-cross-compile.cmake")
+include("${CMAKE_CURRENT_LIST_DIR}/flags/fpic.cmake")
 
 polly_add_cache_flag(CMAKE_C_FLAGS ${RAPSBERRYPI2_COMPILE_FLAGS})
 polly_add_cache_flag(CMAKE_CXX_FLAGS ${RAPSBERRYPI2_COMPILE_FLAGS})
