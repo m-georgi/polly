@@ -229,6 +229,12 @@ if os.name == 'nt':
           vs_version='14'
       ),
       Toolchain(
+          'vs-15-2017-win64-universal',
+          'Visual Studio 15 2017 Win64',
+          arch='amd64',
+          vs_version='15'
+      ),
+      Toolchain(
           'vs-11-2012-arm',
           'Visual Studio 11 2012 ARM',
           vs_version='11'
