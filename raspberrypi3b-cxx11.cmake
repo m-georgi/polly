@@ -67,7 +67,8 @@ endif()
 
 set(RAPSBERRYPI3B_COMPILE_FLAGS
     #"-mcpu=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard"
-    "-mcpu=cortex-a53 -mfpu=neon-fp-armv8 -mfloat-abi=hard"
+    #"-mcpu=cortex-a53 -mfpu=neon-fp-armv8 -mfloat-abi=hard"
+    "-mcpu=cortex-a53 -mfloat-abi=hard -mfpu=neon-fp-armv8 -mneon-for-64bits -mtune=cortex-a53"
     # -funsafe-math-optimizations could be needed: https://github.com/RetroPie/RetroPie-Setup/issues/1385
     CACHE STRING "RaspberryPi 3 B Compile Flags"
 )
