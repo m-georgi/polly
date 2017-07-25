@@ -108,5 +108,9 @@ polly_add_cache_flag(CMAKE_CXX_FLAGS ${RAPSBERRYPI3B_COMPILE_FLAGS})
 polly_add_cache_flag(CMAKE_SYSTEM_NAME "Linux")
 polly_add_cache_flag(CMAKE_SYSTEM_PROCESSOR "armv8-a")
 
+polly_add_cache_flag(CMAKE_CXX_FLAGS "-static-libgcc")
+polly_add_cache_flag(CMAKE_CXX_FLAGS "-static-libstdc++")
+list(APPEND HUNTER_TOOLCHAIN_UNDETECTABLE_ID "static-std")
+
 add_definitions("-DRASPBERRY")
 set(RASPBERRY "TRUE" CACHE STRING "Is platform Raspberry?")
