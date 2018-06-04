@@ -50,7 +50,7 @@ class Toolchain:
       assert(self.vs_version)
 
 toolchain_table = [
-    Toolchain('default', ''),
+    Toolchain('default', 'Unix Makefiles'),
     Toolchain('cxx11', ''),
     Toolchain('android-ndk-r10e-api-8-armeabi-v7a', 'Unix Makefiles'),
     Toolchain('android-ndk-r10e-api-16-armeabi-v7a-neon', 'Unix Makefiles'),
@@ -154,8 +154,13 @@ toolchain_table = [
     Toolchain('android-ndk-r16b-api-24-arm64-v8a-clang-libcxx14', 'Unix Makefiles'),
     Toolchain('android-ndk-r16b-api-24-armeabi-v7a-neon-clang-libcxx', 'Unix Makefiles'),
     Toolchain('android-ndk-r16b-api-24-armeabi-v7a-neon-clang-libcxx14', 'Unix Makefiles'),
-    Toolchain('android-ndk-r17-api-24-arm64-v8a-clang-libcxx14', 'Unix Makefiles'),
     Toolchain('android-ndk-r17-api-16-armeabi-v7a-clang-libcxx14', 'Unix Makefiles'),
+
+    Toolchain('android-ndk-r17-api-24-arm64-v8a-clang-libcxx14', 'Unix Makefiles'),
+    Toolchain('android-ndk-r17-api-24-armeabi-v7a-clang-libcxx14', 'Unix Makefiles'),
+    Toolchain('android-ndk-r17-api-24-x86-64-clang-libcxx14', 'Unix Makefiles'),
+    Toolchain('android-ndk-r17-api-24-x86-clang-libcxx14', 'Unix Makefiles'),
+
     Toolchain('emscripten-cxx11', 'Unix Makefiles'),
     Toolchain('raspberrypi1-cxx11-pic', 'Unix Makefiles'),
     Toolchain('raspberrypi1-cxx11-pic-static-std', 'Unix Makefiles'),
