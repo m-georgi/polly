@@ -1,18 +1,11 @@
-<<<<<<< HEAD
-# Copyright (c) 2015-2018, Ruslan Baratov
-# Copyright (c) 2017-2018, Robert Nitsch
-# Copyright (c) 2018, David Hirvonen
-=======
 # Copyright (c) 2015, Ruslan Baratov
 # Copyright (c) 2017, Robert Nitsch
-# Copyright (c) 2018, Chanwoo Noh
->>>>>>> upstream/master
 # All rights reserved.
 
-if(DEFINED POLLY_ANDROID_NDK_R17_API_21_X86_64_CLANG_LIBCXX14_CMAKE_)
+if(DEFINED POLLY_ANDROID_NDK_R17_API_21_ARM64_V8A_NEON_CLANG_LIBCXX14_CMAKE_)
   return()
 else()
-  set(POLLY_ANDROID_NDK_R17_API_21_X86_64_CLANG_LIBCXX14_CMAKE_ 1)
+  set(POLLY_ANDROID_NDK_R17_API_21_ARM64_V8A_NEON_CLANG_LIBCXX14_CMAKE_ 1)
 endif()
 
 include("${CMAKE_CURRENT_LIST_DIR}/utilities/polly_clear_environment_variables.cmake")
@@ -21,7 +14,7 @@ include("${CMAKE_CURRENT_LIST_DIR}/utilities/polly_init.cmake")
 
 set(ANDROID_NDK_VERSION "r17")
 set(CMAKE_SYSTEM_VERSION "21")
-set(CMAKE_ANDROID_ARCH_ABI "x86_64")
+set(CMAKE_ANDROID_ARCH_ABI "arm64-v8a")
 set(CMAKE_ANDROID_NDK_TOOLCHAIN_VERSION "clang")
 set(CMAKE_ANDROID_STL_TYPE "c++_static") # LLVM libc++ static
 
