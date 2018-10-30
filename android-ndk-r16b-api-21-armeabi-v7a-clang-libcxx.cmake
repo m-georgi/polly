@@ -23,11 +23,7 @@ set(CMAKE_ANDROID_STL_TYPE "c++_static") # LLVM libc++ static
 
 polly_init(
     "Android NDK ${ANDROID_NDK_VERSION} / \
-<<<<<<< HEAD
-API ${CMAKE_SYSTEM_VERSION} / ${CMAKE_ANDROID_ARCH_ABI} / \ 
-=======
 API ${CMAKE_SYSTEM_VERSION} / ${CMAKE_ANDROID_ARCH_ABI} / \
->>>>>>> upstream/master
 32-bit ARM / Clang / c++11 support / libc++ static"
     "Unix Makefiles"
 )

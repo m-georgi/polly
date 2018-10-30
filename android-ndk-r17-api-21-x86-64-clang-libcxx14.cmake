@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-# Copyright (c) 2015-2018, Ruslan Baratov
-# Copyright (c) 2017-2018, Robert Nitsch
-# Copyright (c) 2018, David Hirvonen
-=======
 # Copyright (c) 2015, Ruslan Baratov
 # Copyright (c) 2017, Robert Nitsch
 # Copyright (c) 2018, Chanwoo Noh
->>>>>>> upstream/master
 # All rights reserved.
 
 if(DEFINED POLLY_ANDROID_NDK_R17_API_21_X86_64_CLANG_LIBCXX14_CMAKE_)
