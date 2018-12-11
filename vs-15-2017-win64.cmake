@@ -16,10 +16,5 @@ polly_init(
 
 include("${CMAKE_CURRENT_LIST_DIR}/utilities/polly_common.cmake")
 
-
-set(CMAKE_SYSTEM_VERSION 10.0)
-#set(CMAKE_SYSTEM_NAME WindowsStore)
-
-#add_definitions("-DUWP")
-#add_definitions("-DWIN32_LEAN_AND_MEAN")
-#set(UWP "TRUE" CACHE STRING "Is platform universal windows?")
+include(polly_add_cache_flag)
+polly_add_cache_flag(CMAKE_CXX_FLAGS_INIT "-DNOMINMAX")

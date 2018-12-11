@@ -13,5 +13,6 @@ polly_init(
     "NMake / Visual Studio 2017 / x64"
     "NMake Makefiles"
 )
+add_definitions("-DNOMINMAX")
 
 include("${CMAKE_CURRENT_LIST_DIR}/utilities/polly_common.cmake")
