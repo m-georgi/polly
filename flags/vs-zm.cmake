@@ -10,5 +10,5 @@ endif()
 include(polly_add_cache_flag)
 
 # https://msdn.microsoft.com/en-us/library/hh561383.aspx
-polly_add_cache_flag(CMAKE_CXX_FLAGS_INIT "/Zm")
-polly_add_cache_flag(CMAKE_C_FLAGS_INIT "/Zm")
+polly_add_cache_flag(CMAKE_CXX_FLAGS_INIT "/Zm1000")
+polly_add_cache_flag(CMAKE_C_FLAGS_INIT "/Zm1000")
