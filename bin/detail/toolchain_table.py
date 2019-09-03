@@ -316,6 +316,12 @@ if os.name == 'nt':
           vs_version='15'
       ),
       Toolchain(
+          'vs-15-2017-win32-zm',
+          'Visual Studio 15 2017',
+          arch='x86',
+          vs_version='15'
+      ),
+      Toolchain(
           'vs-15-2017-arm-universal',
           'Visual Studio 15 2017 ARM',
           arch='',
@@ -380,6 +386,12 @@ if os.name == 'nt':
       ),
       Toolchain(
           'vs-15-2017-win64-z7',
+          'Visual Studio 15 2017 Win64',
+          arch='amd64',
+          vs_version='15'
+      ),
+      Toolchain(
+          'vs-15-2017-win64-zm',
           'Visual Studio 15 2017 Win64',
           arch='amd64',
           vs_version='15'
