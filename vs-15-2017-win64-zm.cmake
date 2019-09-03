@@ -15,7 +15,7 @@ polly_init(
 )
 
 include("${CMAKE_CURRENT_LIST_DIR}/utilities/polly_common.cmake")
-include("${CMAKE_CURRENT_LIST_DIR}/flags/vs-zm.cmake")
 
 include(polly_add_cache_flag)
 polly_add_cache_flag(CMAKE_CXX_FLAGS_INIT "-DNOMINMAX")
+polly_add_cache_flag(CMAKE_VS_SDK_EXECUTABLE_DIRECTORIES "$(VC_ExecutablePath_x64_x64);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(FxCopDir);$(PATH);")
